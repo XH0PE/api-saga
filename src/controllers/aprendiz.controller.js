@@ -7,7 +7,7 @@ export const createAprendices = async (req, res) => {
         res.send({ 
             id: rows.insertId,
             name,
-            salary
+            age
         })
     } catch(error){
         return res.status(500).json({
